@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddEventFragment">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextMultiLine3"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="Descripcion del Evento:"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextMultiLine"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:text="mes:"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextMultiLine2"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="Nombre del Evento:"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine6"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="8"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:text="Dia:"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Exemple"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Dia de campo"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:layout_below="@+id/textView7"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_32sdp"/>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="jueves"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextMultiLine"
+        android:layout_marginStart="@dimen/_72sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Noviembre"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Agregar evento "
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextMultiLine4"
+        android:layout_marginStart="@dimen/_92sdp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Agregar evento "
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+</RelativeLayout>

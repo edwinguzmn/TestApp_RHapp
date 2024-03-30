@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/UsersMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ligtgray3"
+    android:layout_margin="@dimen/_10sdp"
+    tools:context=".fragments.DrawerUsersFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Textusuarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:gravity="center"
+                android:text="Usuarios:"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ReciclerviewHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Textusuarios"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp" />
+
+            <TextView
+                android:id="@+id/welcomeMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ReciclerviewHorizontal"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/custombordersearch"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="Ha ingresado como:"
+                android:textSize="@dimen/_14sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_below="@+id/welcomeMessage"
+                android:layout_marginTop="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/layoutContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:background="@drawable/custombordersearch"
+                    android:backgroundTint="@color/white">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/profile_imagen"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginStart="@dimen/_100sdp"
+                        android:src="@drawable/user13" />
+
+
+                    <TextView
+                        android:id="@+id/userStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profile_imagen"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="Rh director" />
+
+                    <ImageView
+                        android:id="@+id/imagevideo23"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/profile_imagen"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_content_paste_24" />
+
+                    <ImageView
+                        android:id="@+id/imagevideo2"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/imagevideo23"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/ic_baseline_supervised_user_circle_24" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/userStatus"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="Rh director" />
+
+
+                    <ImageView
+                        android:id="@+id/imagevideo"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/imagevideo2"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/ic_baseline_verified_user_24" />
+
+                    <TextView
+                        android:id="@+id/Rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="Rh director" />
+
+                    <ImageView
+                        android:id="@+id/imagennn"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/imagevideo"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:src="@drawable/ic_baseline_alternate_email_24" />
+
+                    <TextView
+                        android:id="@+id/Usermaill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Rank"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="Example.mail@hotmail.com" />
+
+                    <ImageView
+                        android:id="@+id/immmi"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/imagennn"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:src="@drawable/ic_baseline_admin_panel_settings_24" />
+
+                    <TextView
+                        android:id="@+id/User_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Usermaill"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="407456" />
+
+                    <ImageView
+                        android:id="@+id/immmi23"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/immmi"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:src="@drawable/ic_baseline_date_range_24" />
+
+                    <TextView
+                        android:id="@+id/Dateofjoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/User_id"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="407456" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Dateofjoint"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/correo" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ShortModeUsers"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_240sdp"
+        android:layout_marginTop="@dimen/_380sdp"
+        android:backgroundTint="@color/buttons"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:tint="@color/white"
+        android:tintMode="src_atop"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundesstyle"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:elevation="@dimen/_8sdp"
+    android:backgroundTint="@color/ligtgray2">
+
+    <RelativeLayout
+        android:id="@+id/relativeLay"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/roundesstyle">
+
+        <TextView
+            android:id="@+id/textViewDay"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@color/buttons"
+            android:gravity="center"
+            android:text="jueves"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDayNumber"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/textViewDay"
+            android:gravity="center"
+            android:text="6"
+            android:textSize="@dimen/_24sdp"
+            android:background="@color/ligtgray"/>
+
+        <TextView
+            android:id="@+id/textViewMont"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@+id/textViewDayNumber"
+            android:gravity="center"
+            android:text="jueves"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/buttons"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/relativeLay"
+        android:layout_toRightOf="@id/relativeLay"
+        android:text="username"
+        android:textSize="16dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewEventDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEventName"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginLeft="10dp"
+        android:text="username"
+        android:textSize="14dp"/>
+
+</RelativeLayout>

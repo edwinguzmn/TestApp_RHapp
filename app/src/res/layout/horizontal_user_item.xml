@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:elevation="@dimen/_26sdp"
+        app:cardCornerRadius="@dimen/_12sdp"
+        android:background="@drawable/customborder">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/profile_imagen"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_75sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:src="@drawable/user13"
+                app:riv_oval="true" />
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_110sdp"
+                android:gravity="center"
+                android:text="examplename"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/UserStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_130sdp"
+                android:gravity="center"
+                android:text="examplename"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLaymain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/UserStatus"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/customborder">
+
+                <ImageView
+                    android:id="@+id/imagevideo"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:src="@drawable/ic_baseline_verified_user_24" />
+
+                <TextView
+                    android:id="@+id/Rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_toRightOf="@+id/imagevideo"
+                    android:text="Rh director" />
+
+                <ImageView
+                    android:id="@+id/imagennn"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_below="@+id/imagevideo"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_baseline_alternate_email_24" />
+
+                <TextView
+                    android:id="@+id/Usermaill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Rank"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/imagevideo"
+                    android:text="Example.mail@hotmail.com" />
+
+                <ImageView
+                    android:id="@+id/immmi"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_below="@+id/imagennn"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_baseline_admin_panel_settings_24" />
+
+                <TextView
+                    android:id="@+id/User_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Usermaill"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/imagevideo"
+                    android:text="407456" />
+
+                <ImageView
+                    android:id="@+id/immmi23"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_below="@+id/immmi"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_baseline_date_range_24" />
+
+                <TextView
+                    android:id="@+id/Dateofjoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/User_id"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/imagevideo"
+                    android:text="407456" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

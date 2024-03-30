@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custombordersearch"
+    android:elevation="@dimen/_50sdp"
+    android:layout_margin="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/LaydayData"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:background="@drawable/customborder">
+
+            <TextView
+                android:id="@+id/DateDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="28"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DateMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DateDay"
+                android:gravity="center"
+                android:text="Nov"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DateHourStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DateMonth"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="center"
+                android:text="5:20 Am"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/simpleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DateHourStart"
+                android:gravity="center"
+                android:text="a"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/DateHourFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simpleText"
+                android:gravity="center"
+                android:text="6:30 Am"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_toRightOf="@+id/LaydayData"
+            android:background="@drawable/customborder">
+
+            <TextView
+                android:id="@+id/EventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Junta general "
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/EventDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EventName"
+                android:text="Junta general para todo empleado perteneciente a la empresa."
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

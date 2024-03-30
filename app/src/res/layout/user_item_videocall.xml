@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:padding="10dp"
+android:layout_height="wrap_content">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/profile_image"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@mipmap/ic_launcher">
+
+</de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/profile_image"
+        android:layout_toRightOf="@id/profile_image"
+        android:text="username"
+        android:textSize="16dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/videocall"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_200sdp"
+        android:padding="@dimen/_1sdp"
+        android:src="@drawable/ic_baseline_video_call" />
+
+    <ImageView
+        android:id="@+id/audiocall"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_120sdp"
+        android:padding="@dimen/_2sdp" />
+
+    <TextView
+        android:id="@+id/user_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="10dp"
+        android:text="username"
+        android:textSize="14dp">
+
+    </TextView>
+
+</RelativeLayout>

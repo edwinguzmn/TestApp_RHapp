@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ligtgray3"
+    tools:context=".NavigationDrawerUsersFragments.NavigationDrawer_home_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@drawable/captura_sss" />
+
+            <RelativeLayout
+                android:id="@+id/layoutDelimiter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageWelcome"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_14sdp">
+
+                    <TextView
+                        android:id="@+id/messageWelcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Bienvenido, nueva mente:"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:text="Example Name" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_190sdp"
+                    android:layout_below="@+id/Welcome"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:elevation="@dimen/_14sdp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/text12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:text="Tome en cuenta lo siguiente... " />
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text12"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:text="Para completar su registro y ser candidato para aplicar a un vacante, debe llenar su currículo para ello en el menú de navegación, identifique la sección “Currículo”, una vez en la sección proceda a llenar la información n que se le solicita, final mente presione el botón guardar, por último, vera que su estado cambiara de “Sin empezar” a “En proceso”. " />
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="146dp"
+                            android:layout_below="@+id/text1"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:text="si usted es apto para la vacante, recibirá una notificación de que fue seleccionado, y su status cambiara a “empleado”. " />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutDelimiter"
+                android:gravity="center"
+                android:text="Estatus:"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_below="@+id/textTitle"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/userStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="Rh director" />
+
+                    <ImageView
+                        android:id="@+id/imagevideo23"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_content_paste_24" />
+
+                    <ImageView
+                        android:id="@+id/imagevideo2"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/imagevideo23"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/ic_baseline_supervised_user_circle_24" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/userStatus"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="Rh director" />
+
+
+                    <ImageView
+                        android:id="@+id/imagevideo"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/imagevideo2"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/ic_baseline_verified_user_24" />
+
+                    <TextView
+                        android:id="@+id/Rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="Rh director" />
+
+                    <ImageView
+                        android:id="@+id/imagennn"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/imagevideo"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:src="@drawable/ic_baseline_alternate_email_24" />
+
+                    <TextView
+                        android:id="@+id/Usermaill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Rank"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="Example.mail@hotmail.com" />
+
+                    <ImageView
+                        android:id="@+id/immmi"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/imagennn"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:src="@drawable/ic_baseline_admin_panel_settings_24" />
+
+                    <TextView
+                        android:id="@+id/User_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Usermaill"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="407456" />
+
+                    <ImageView
+                        android:id="@+id/immmi23"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/immmi"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:src="@drawable/ic_baseline_date_range_24" />
+
+                    <TextView
+                        android:id="@+id/Dateofjoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/User_id"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_toRightOf="@+id/imagevideo"
+                        android:text="407456" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

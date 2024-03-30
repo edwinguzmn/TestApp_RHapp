@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_8sdp"
+    tools:context=".fragments.NavigationDrawer_Stadistics_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ligtgray3">
+
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Estadisticas"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageUsuarios"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/textDesc"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/empleados_icons" />
+
+            <TextView
+                android:id="@+id/textUsuarText"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageUsuarios"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="Usuarios registrados en la aplicación " />
+
+
+            <TextView
+                android:id="@+id/countUsers"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUsuarText"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageEmpleados"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/textDesc"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/imageUsuarios"
+                android:src="@drawable/usuarios_icons" />
+
+            <TextView
+                android:id="@+id/textEmpleados"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageEmpleados"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_toRightOf="@+id/textUsuarText"
+                android:gravity="center"
+                android:text="Número de empleados totales" />
+
+            <TextView
+                android:id="@+id/countEmpleados"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textEmpleados"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_toRightOf="@+id/countUsers"
+                android:gravity="center"
+                android:text="10"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imagesinempezar"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/textDesc"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/imageEmpleados"
+                android:src="@drawable/status_enproseso_icons" />
+
+            <TextView
+                android:id="@+id/textsinempezar"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageEmpleados"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_toRightOf="@+id/textEmpleados"
+                android:gravity="center"
+                android:text="Numero de aplicantes totales" />
+
+            <TextView
+                android:id="@+id/countsinempezar"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textEmpleados"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_toRightOf="@+id/countEmpleados"
+                android:gravity="center"
+                android:text="10"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:layout_below="@+id/countsinempezar"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:elevation="@dimen/_14sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageInfo"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_baseline_error_outline_24" />
+
+                    <TextView
+                        android:id="@+id/textFirst"
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/imageInfo"
+                        android:text="+ 20" />
+
+                    <TextView
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textFirst"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/imageInfo"
+                        android:text="Clasificación de usuarios " />
+
+
+                    <ImageView
+                        android:id="@+id/imageInfo3"
+                        android:layout_width="60dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_toRightOf="@+id/textFirst"
+                        android:src="@drawable/ic_baseline_bar_chart_24" />
+
+                    <com.anychart.AnyChartView
+                        android:id="@+id/PieChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_190sdp"
+                        android:layout_below="@+id/imageInfo" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textDesc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Estadísticas de aplicantes "
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageUsuarios2"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/textDesc2"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/telecomunicaciones" />
+
+            <TextView
+                android:id="@+id/textUsuarText2"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageUsuarios2"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:gravity="center"
+                android:text="Telecomunicaciones y redes" />
+
+            <TextView
+                android:id="@+id/countUsers2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUsuarText2"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageUsuarios3"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/textDesc2"
+                android:layout_marginStart="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/imageUsuarios2"
+                android:src="@drawable/gestiondecalidad" />
+
+            <TextView
+                android:id="@+id/textUsuarText3"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageUsuarios2"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_toRightOf="@+id/imageUsuarios2"
+                android:gravity="center"
+                android:text="Gestión de calidad" />
+
+            <TextView
+                android:id="@+id/countUsers3"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUsuarText2"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/imageUsuarios2"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageUsuarios4"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/textDesc2"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/textUsuarText3"
+                android:src="@drawable/backend" />
+
+            <TextView
+                android:id="@+id/textUsuarText4"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageUsuarios4"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/textUsuarText3"
+                android:gravity="center"
+                android:text="Back end " />
+
+            <TextView
+                android:id="@+id/countUsers4"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUsuarText4"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/textUsuarText3"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageUsuarios5"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/textDesc2"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/textUsuarText4"
+                android:src="@drawable/frontend" />
+
+            <TextView
+                android:id="@+id/textUsuarText5"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageUsuarios5"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/textUsuarText4"
+                android:gravity="center"
+                android:text="Front end" />
+
+            <TextView
+                android:id="@+id/countUsers5"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUsuarText5"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/textUsuarText4"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:layout_below="@+id/countUsers3"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:elevation="@dimen/_14sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageInfo2"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_baseline_error_outline_24" />
+
+                    <TextView
+                        android:id="@+id/textFirst2"
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/imageInfo2"
+                        android:text="+ 12" />
+
+                    <TextView
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textFirst2"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/imageInfo2"
+                        android:text="Estadísticas de aplicantes " />
+
+
+                    <ImageView
+                        android:id="@+id/imageInfo32"
+                        android:layout_width="60dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_toRightOf="@+id/textFirst2"
+                        android:src="@drawable/ic_baseline_bar_chart_24" />
+
+                    <com.anychart.AnyChartView
+                        android:id="@+id/PieChart2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_190sdp"
+                        android:layout_below="@+id/imageInfo2" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textDesc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview2"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Estadísticas de empresa"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countUsers23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc3"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countUsers2344"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc3"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/countUsers23"
+                android:gravity="center"
+                android:text="/ 6"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countUsers2333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc3"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/countUsers2344"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countUsers2334"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc3"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/countUsers2333"
+                android:gravity="center"
+                android:text="/ 6"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countUsers23344"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc3"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/countUsers2334"
+                android:gravity="center"
+                android:text="6"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countUsers233445"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc3"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/countUsers23344"
+                android:gravity="center"
+                android:text="/ 6"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countUsers2334454"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc3"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/countUsers233445"
+                android:gravity="center"
+                android:text="6"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countUsers23344545"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDesc3"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/countUsers2334454"
+                android:gravity="center"
+                android:text="/ 6"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_280sdp"
+                android:layout_below="@+id/countUsers2334"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:elevation="@dimen/_14sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageInfo44"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_baseline_error_outline_24" />
+
+                    <TextView
+                        android:id="@+id/textFirst3"
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/imageInfo44"
+                        android:text="+ 12" />
+
+                    <TextView
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textFirst3"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/imageInfo44"
+                        android:text="Estadísticas de aplicantes " />
+
+
+                    <ImageView
+                        android:id="@+id/imageInfo324"
+                        android:layout_width="60dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_toRightOf="@+id/textFirst3"
+                        android:src="@drawable/ic_baseline_bar_chart_24" />
+
+                    <com.anychart.AnyChartView
+                        android:id="@+id/PieChart3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_250sdp"
+                        android:layout_below="@+id/imageInfo44" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

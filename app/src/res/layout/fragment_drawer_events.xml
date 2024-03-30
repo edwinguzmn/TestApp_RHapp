@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DrawerEventsFragment">
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Textusuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:gravity="center"
+            android:text="Eventos:"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/SearchLay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/Textusuarios"
+            android:background="@drawable/custombordersearch">
+
+            <SearchView
+                android:id="@+id/SearchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SearchLaySpin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/SearchLay">
+
+            <Spinner
+                android:id="@+id/SpinerSearch"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ReciclerviewEvents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/SearchLaySpin" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_220sdp"
+        android:layout_marginTop="@dimen/_380sdp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_add_24" />
+
+</RelativeLayout>

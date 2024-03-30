@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationDrawerUserRolModActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/buttons"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/ToolbarTheme">
+
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/laydown"
+        android:background="@color/buttons"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbarr"
+        android:layout_height="@dimen/_120sdp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarr"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/custombordersearch"
+            android:backgroundTint="@color/white">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/profile_imagen"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_100sdp"
+                android:src="@drawable/user13" />
+
+
+            <TextView
+                android:id="@+id/userStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_imagen"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_toRightOf="@+id/imagevideo23"
+                android:text="Rh director" />
+
+            <ImageView
+                android:id="@+id/imagevideo23"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@+id/profile_imagen"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_content_paste_24" />
+
+            <ImageView
+                android:id="@+id/imagevideo2"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@+id/imagevideo23"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:src="@drawable/ic_baseline_supervised_user_circle_24" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userStatus"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/imagevideo"
+                android:text="Rh director" />
+
+
+            <ImageView
+                android:id="@+id/imagevideo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@+id/imagevideo2"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:src="@drawable/ic_baseline_verified_user_24" />
+
+            <TextView
+                android:id="@+id/Rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/imagevideo"
+                android:text="Rh director" />
+
+            <ImageView
+                android:id="@+id/imagennn"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@+id/imagevideo"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/ic_baseline_alternate_email_24" />
+
+            <TextView
+                android:id="@+id/Usermaill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Rank"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_toRightOf="@+id/imagevideo"
+                android:text="Example.mail@hotmail.com" />
+
+            <ImageView
+                android:id="@+id/immmi"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@+id/imagennn"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/ic_baseline_admin_panel_settings_24" />
+
+            <TextView
+                android:id="@+id/User_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Usermaill"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_toRightOf="@+id/imagevideo"
+                android:text="407456" />
+
+            <ImageView
+                android:id="@+id/immmi23"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@+id/immmi"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/ic_baseline_date_range_24" />
+
+            <TextView
+                android:id="@+id/Dateofjoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/User_id"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_toRightOf="@+id/imagevideo"
+                android:text="407456" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layyyy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layup"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <Spinner
+            android:id="@+id/spoinerRoleSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spoinerRoleSelect"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="@string/correo" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/editRool"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layyyy"
+        android:layout_marginStart="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:backgroundTint="@color/buttons"
+        android:text="Editar Rol" />
+
+
+
+</RelativeLayout>

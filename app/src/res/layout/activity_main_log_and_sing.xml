@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_log_and_sing">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_of_ui">
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:elevation="@dimen/_60sdp"
+            android:src="@drawable/user1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_340sdp"
+            android:layout_marginStart="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:layout_marginEnd="@dimen/_23sdp"
+            android:background="@drawable/roundesstyle"
+            android:elevation="@dimen/_23sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_42sdp"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:text="@string/correo"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_42sdp"
+                android:layout_marginTop="@dimen/_92sdp"
+                android:layout_marginEnd="@dimen/_42sdp"
+                android:backgroundTint="@color/ligtgray"
+                android:hint="Exemple_mail@hotmail.com"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_42sdp"
+                android:layout_marginTop="@dimen/_160sdp"
+                android:text="@string/contraseña"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_42sdp"
+                android:layout_marginTop="@dimen/_180sdp"
+                android:layout_marginEnd="@dimen/_42sdp"
+                android:backgroundTint="@color/ligtgray"
+                android:hint="password"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_230sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:backgroundTint="@color/buttons"
+                android:text="@string/Login"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:layout_marginStart="@dimen/_92sdp"
+                android:layout_marginTop="@dimen/_270sdp"
+                android:text="ingresar con:"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_295sdp"
+                android:src="@drawable/google" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_110sdp"
+                android:layout_marginTop="@dimen/_295sdp"
+                android:src="@drawable/instagram" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_170sdp"
+                android:layout_marginTop="@dimen/_295sdp"
+                android:src="@drawable/facebock" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cambiarideoma"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:backgroundTint="@color/color_baggroung_theme1">
+
+            <ImageView
+                android:id="@+id/imageViewlan"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:src="@drawable/ic_baseline_language_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_90sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="@string/cambiarideoma"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text122"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardView_main"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:gravity="center"
+            android:text="@string/sincuenta"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text122"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="@string/registro"
+            android:textColor="@color/buttons"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>
